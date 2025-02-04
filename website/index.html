@@ -1,39 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Web Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Vijay </title>
+  <style>
+  
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    header {
+      width: 100%;
+      background-color: #1f2937;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    main {
+      flex: 1;
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: 1fr;
+      max-width: 900px;
+      padding: 2rem;
+    }
+
+    @media (min-width: 640px) {
+      main {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .card {
+      background-color: #1f2937;
+      border-radius: 1rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 123, 255, 0.5);
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card p, .card ul {
+      color: #d1d5db;
+    }
+
+    .card ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+    }
+
+    .button {
+      display: inline-block;
+      text-align: center;
+      background-color: #3b82f6;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #2563eb;
+    }
+
+    footer {
+      width: 100%;
+      background-color: #1f2937;
+      padding: 1rem;
+      text-align: center;
+      color: #9ca3af;
+    }
+  </style>
 </head>
-<body class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 min-h-screen flex flex-col items-center justify-center text-white">
-    <header class="text-center mb-8">
-        <h1 class="text-4xl md:text-6xl font-bold mb-2">Welcome to the Awesome Page</h1>
-        <p class="text-lg md:text-2xl">Where creativity meets functionality!</p>
-    </header>
+<body>
+  <header>
+    <h1>CICD Pipeline Project </h1>
+  </header>
 
-    <main class="w-full max-w-4xl">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-white rounded-2xl shadow-lg p-6 text-center text-gray-800">
-                <h2 class="text-xl font-semibold mb-4">Feature One</h2>
-                <p class="text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Learn More</button>
-            </div>
-            <div class="bg-white rounded-2xl shadow-lg p-6 text-center text-gray-800">
-                <h2 class="text-xl font-semibold mb-4">Feature Two</h2>
-                <p class="text-base">Curabitur venenatis ut elit quis tempus, consectetur adipiscing elit.</p>
-                <button class="mt-4 px-4 py-2 bg-purple-500 text-white rounded-lg hover:bg-purple-600">Discover</button>
-            </div>
-            <div class="bg-white rounded-2xl shadow-lg p-6 text-center text-gray-800">
-                <h2 class="text-xl font-semibold mb-4">Feature Three</h2>
-                <p class="text-base">Aenean euismod ligula eget dolor interdum, non ultrices purus.</p>
-                <button class="mt-4 px-4 py-2 bg-pink-500 text-white rounded-lg hover:bg-pink-600">Get Started</button>
-            </div>
-        </div>
-    </main>
+  <main>
+    <div class="card">
+      <h2>About Our Project</h2>
+      <p>Our CICD (Continuous Integration and Continuous Deployment) pipeline project is a comprehensive solution for automating code deployment, testing, and delivery. It ensures faster and more reliable software releases by integrating tools like Jenkins, Docker, Kubernetes, and GitHub.</p>
+    </div>
 
-    <footer class="mt-12 text-center">
-        <p class="text-sm">&copy; 2025 Awesome Web Page. All rights reserved.</p>
-    </footer>
+        <div class="card">
+  <h1>Created By Vijay Shilwant </h1>
+ <p>  Student of CDAC DITISS   </p>
+   </div>
+
+    <div class="card">
+      <h2>Technologies Used</h2>
+      <ul>
+        <li>Jenkins for automated builds and pipelines</li>
+        <li>Docker for containerization</li>
+        <li>Kubernetes for container orchestration</li>
+        <li>GitHub for source control</li>
+        <li>Slack for team notifications</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Automated testing and deployment</li>
+        <li>Scalable and containerized architecture</li>
+        <li>Real-time notifications and monitoring</li>
+        <li>Customizable pipelines for different environments</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Get Involved</h2>
+      <p>Want to contribute or learn more about the project? Check out our GitHub repository or reach out to us for collaboration opportunities.</p>
+      <a href="https://github.com/007Vijay" target="_blank" class="button">Visit GitHub Repository</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;  created with Love ❤ By @Shilwant Vijay </p>
+  </footer>
 </body>
 </html>
